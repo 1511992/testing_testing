@@ -19,7 +19,12 @@
  */
 stuLL_t* createNodeLinkedList(void)
 {
-	// PROBLEM #1: complete the code for this function
+	{ stuLL_t *pNode = (stuLL_t *) malloc(sizeof(stuLL_t));
+	 if (pNode != NULL) 
+		 pNode->data.fname;
+	         pNode->data.gname;
+	         pNode->data.grade;
+	         pNode->pnext.Null;// PROBLEM #1: complete the code for this function
 	//	       NOTE: PLEASE COMMIT CHANGES ONCE YOUR DONE THIS FUNCTION
 }
 
