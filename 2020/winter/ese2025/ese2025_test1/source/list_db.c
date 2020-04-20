@@ -17,15 +17,14 @@
 /*
  * (private) function creates a new node; if it returns NULL, malloc() was unable to do it!
  */
-stuLL_t* createNodeLinkedList(sturec_t stdata)
+stuLL_t* createNodeLinkedList(stuRec_t stdata)
 {
 	{ stuLL_t *pNode = (stuLL_t *) malloc(sizeof(stuLL_t));
-	 if (pNode != NULL) 
-		 pNode->data.fname;
-	         pNode->data.gname;
-	         pNode->data.grade;
-	         pNode->pnext.Null;// PROBLEM #1: complete the code for this function
-	//	       NOTE: PLEASE COMMIT CHANGES ONCE YOUR DONE THIS FUNCTION
+	 if (pNode != NULL) //if condition used to check condition and to give data to new node
+		 pNode->data.fname;//node created for family name
+	         pNode->data.gname;// node for given name
+	         pNode->data.grade;//node for grade
+	         pNode->pnext.Null;//value asigning to next node which is null
 }
 
 /*
