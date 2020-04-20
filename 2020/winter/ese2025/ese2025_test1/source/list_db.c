@@ -96,9 +96,8 @@ stuLL_t* findLinkedList(stuLL_t *pHEAD, char *targetFamilyName)
 		// list is not empty, begin search
 		while ((pW != NULL) && (strcmp(pW->data.fName, targetFamilyName)))
 		{
-			// PROBLEM #2: complete the code for this function
-			//	       NOTE: PLEASE COMMIT CHANGES ONCE YOUR DONE THIS FUNCTION
-		}
+			return pw->pNext;//if the above while condition satisfies the pw will return to next node
+				       		}
 		printf("\n");
 	}
 	return pW;
