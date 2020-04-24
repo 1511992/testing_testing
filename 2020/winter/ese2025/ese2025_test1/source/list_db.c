@@ -21,10 +21,10 @@ stuLL_t* createNodeLinkedList(stuRec_t stdata)
 {
 	 stuLL_t *pNode = (stuLL_t *) malloc(sizeof(stuLL_t));
 	 if (pNode != NULL) //if condition used to check condition and to give data to new node
-	 {	 pNode->data.fname;//node created for family name
-	         pNode->data.gname;// node for given name
+	 {	 pNode->data.fName;//node created for family name
+	         pNode->data.gName;// node for given name
 	         pNode->data.grade;//node for grade
-	         pNode->pnext.Null;//value asigning to next node which is null
+	         pNode->pnext=NULL;//value asigning to next node which is null
         }
 }
 
@@ -97,7 +97,7 @@ stuLL_t* findLinkedList(stuLL_t *pHEAD, char *targetFamilyName)
 		// list is not empty, begin search
 		while ((pW != NULL) && (strcmp(pW->data.fName, targetFamilyName)))
 		{
-			return pw->pNext;//if the above while condition satisfies the pw will return to next node
+			return pW->pNext;//if the above while condition satisfies the pw will return to next node
 				       		}
 		printf("\n");
 	}
