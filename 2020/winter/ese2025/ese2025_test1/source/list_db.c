@@ -19,12 +19,13 @@
  */
 stuLL_t* createNodeLinkedList(stuRec_t stdata)
 {
-	{ stuLL_t *pNode = (stuLL_t *) malloc(sizeof(stuLL_t));
+	 stuLL_t *pNode = (stuLL_t *) malloc(sizeof(stuLL_t));
 	 if (pNode != NULL) //if condition used to check condition and to give data to new node
-		 pNode->data.fname;//node created for family name
+	 {	 pNode->data.fname;//node created for family name
 	         pNode->data.gname;// node for given name
 	         pNode->data.grade;//node for grade
 	         pNode->pnext.Null;//value asigning to next node which is null
+        }
 }
 
 /*
